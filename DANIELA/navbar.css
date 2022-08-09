@@ -1,0 +1,99 @@
+/* navbar icons color change animation */
+
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0);
+    /* color: rgba(173, 11, 11, 0.834); */
+    /* box-shadow: 2px 2px 2px #00000000, 1px 1px 2px #00000000, 2px 2px 1px #00000000, 2px 2px 3px #00000000, inset 2px 2px 1px #00000000, inset 2px 2px 1px #00000000, inset 2px 2px 1px #00000000, inset 2px 2px 1px #00000000; */
+    border-radius: 20px;
+    padding: 5px 7px;
+    margin: 0 4px;
+    color: rgba(21, 18, 14, 0.779);
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 5px #0a5ce9a1, 0 0 10px #d436f4b3, 0 0 150px #ed227da5, 0 0 200px #24025ab1;
+}
+
+#twitter {
+    animation-delay: 0.3s;
+}
+
+#facebook {
+    animation-delay: 0.7s;
+}
+
+#github {
+    animation-delay: 0.1s;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.narbar {
+    background-color: rgba(245, 222, 179, 0.007);
+}
+
+a.dropdown-item {
+    background-color: rgba(245, 222, 179, 0.203);
+}
+
+
+/* navbar Gradient */
+
+.navbar {
+    background: linear-gradient(270deg, #e3fdf6, #a8f5e0, #84d4ec, #31bce6);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: navbarColor 30s ease infinite;
+}
+
+@-webkit-keyframes navbarColor {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes navbarColor {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes navbarColor {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.fa-cart {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.388);
+    border-style: none;
+}
